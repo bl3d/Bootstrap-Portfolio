@@ -10,99 +10,131 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
+
+  <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">    
+  
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
 </head>
 
 <body>
 
   <!-- header with logo and links to all pages -->
-  <header> 
-    <div class="headerContents masterWidth">
-      <a id="mainLogo" href="index.html">Brent Lewis</a>
-      <ul id="navLinks">
-        <li class="mainLink">
-          <a href="index.html">About</a>
-        </li>
-        <li class="mainLink">
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="mainLink">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Brent Lewis</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>          
+      </div>    
 
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">About</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
 
   <!-- main content area -->
-  <div class="container masterWidth">
+  <div class="container">
 
     <div class="row">
       
       <!-- left content holder - main page content -->
-      <section id="mainContent" class="col-md-9">
-        <h1>Portfolio</h1>
-        <ul id="portfolioItems">
+      <section class="col-lg-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title">Portfolio</h1>
+          </div>
+          <div class="panel-body">                    
+            <ul id="portfolioItems">
 
-          <li class="pItem">
-            <a href="http://www.mercedes-amg.com/webspecial/gtfamily/index.php?lang=eng" target="_blank">
-              <span class="pTitle">GT Family</span>
-              <img src="assets/images/portfolio/pThumb_GT-Family.jpg" alt="portfolio item" class="pThumb">   
-            </a>
-          </li>
+              <li class="pItem">
+                <a href="http://www.mercedes-amg.com/webspecial/gtfamily/index.php?lang=eng" target="_blank">
+                  <span class="pTitle">GT Family</span>
+                  <img src="assets/images/portfolio/pThumb_GT-Family.jpg" alt="portfolio item" class="pThumb">   
+                </a>
+              </li>
 
-          <li class="pItem">
-            <a href="http://www.mercedes-amg.com/webspecial/beastofthegreenhell/index.php?lang=eng" target="_blank">
-              <span class="pTitle">GT R</span>
-              <img src="assets/images/portfolio/pThumb_GT-R.jpg" alt="portfolio item" class="pThumb">        
-            </a>
-          </li>
+              <li class="pItem">
+                <a href="http://www.mercedes-amg.com/webspecial/beastofthegreenhell/index.php?lang=eng" target="_blank">
+                  <span class="pTitle">GT R</span>
+                  <img src="assets/images/portfolio/pThumb_GT-R.jpg" alt="portfolio item" class="pThumb">        
+                </a>
+              </li>
 
-          <li class="pItem">
-            <a href="http://www.mercedes-amg.com/webspecial/scabriolet/index.php?lang=eng" target="_blank">
-              <span class="pTitle">S Cabriolet</span>
-              <img src="assets/images/portfolio/pThumb_S-Cabriolet.jpg" alt="portfolio item" class="pThumb">  
-            </a>
-          </li>
+              <li class="pItem">
+                <a href="http://www.mercedes-amg.com/webspecial/scabriolet/index.php?lang=eng" target="_blank">
+                  <span class="pTitle">S Cabriolet</span>
+                  <img src="assets/images/portfolio/pThumb_S-Cabriolet.jpg" alt="portfolio item" class="pThumb">  
+                </a>
+              </li>
 
-          <li class="pItem">
-            <a href="http://www.mercedes-amg.com/webspecial/compactcars/index.php?lang=eng" target="_blank">
-              <span class="pTitle">Compact Cars</span>
-              <img src="assets/images/portfolio/pThumb_compactCars.jpg" alt="portfolio item" class="pThumb">        
-            </a>
-          </li>
+              <li class="pItem">
+                <a href="http://www.mercedes-amg.com/webspecial/compactcars/index.php?lang=eng" target="_blank">
+                  <span class="pTitle">Compact Cars</span>
+                  <img src="assets/images/portfolio/pThumb_compactCars.jpg" alt="portfolio item" class="pThumb">        
+                </a>
+              </li>
 
-          <li class="pItem">
-            <a href="http://www.mercedes-amg.com/webspecial/s63/index_eng.php" target="_blank">
-              <span class="pTitle">S 63 Sedan</span>
-              <img src="assets/images/portfolio/pThumb_S-63-Sedan.jpg" alt="portfolio item" class="pThumb">        
-            </a>
-          </li>
+              <li class="pItem">
+                <a href="http://www.mercedes-amg.com/webspecial/s63/index_eng.php" target="_blank">
+                  <span class="pTitle">S 63 Sedan</span>
+                  <img src="assets/images/portfolio/pThumb_S-63-Sedan.jpg" alt="portfolio item" class="pThumb">        
+                </a>
+              </li>
 
-        </ul> 
-      </section>    
+            </ul> 
+          </div>          
+        </div>  
+      </section>       
 
 
       <!-- social media connect area -->
-      <div id="socialConnect" class="col-md-3">
-        <h2>Connect with Me</h2>
-        <ul id="socailConnectMenu">
-          <li class="socialLink">
-            <a href="https://github.com/bl3d/" target="_blank">
-              <img src="assets/images/socialIcons/github.jpg" alt="Brent Lewis Github Account">
-            </a>
-          </li>
-          <li class="socialLink">
-            <a href="https://www.linkedin.com/in/brent-lewis-4006b14" target="_blank">
-              <img src="assets/images/socialIcons/linkedIn.jpg" alt="Brent Lewis LinkedIn Account">
-            </a>
-          </li>
-          <li class="socialLink">
-            <a href="http://stackoverflow.com/users/6753936/bl3d?tab=profile" target="_blank">
-              <img src="assets/images/socialIcons/stackOverflow.jpg" alt="Brent Lewis Stack Overflow Account">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <aside class="col-lg-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Connect with Me</h2>
+          </div>
+
+          <div class="panel-body">
+            <ul id="socailConnectMenu" class="list-group">
+              <li class="socialLink">
+                <a href="https://github.com/bl3d/" target="_blank">
+                  <img src="assets/images/socialIcons/github.jpg" alt="Brent Lewis Github Account">
+                </a>
+              </li>
+              <li class="socialLink">
+                <a href="https://www.linkedin.com/in/brent-lewis-4006b14" target="_blank">
+                  <img src="assets/images/socialIcons/linkedIn.jpg" alt="Brent Lewis LinkedIn Account">
+                </a>
+              </li>
+              <li class="socialLink">
+                <a href="http://stackoverflow.com/users/6753936/bl3d?tab=profile" target="_blank">
+                  <img src="assets/images/socialIcons/stackOverflow.jpg" alt="Brent Lewis Stack Overflow Account">
+                </a>
+              </li>
+            </ul>          
+          </div> 
+        </div>        
+      </aside>
       
     </div>    
 
@@ -110,8 +142,10 @@
 
 
   <!-- footer with copyright info -->
-  <footer>
-    <span id="copyrightInfo">&copy;&nbsp;Copyright 2017 Brent Lewis</span>
+  <footer class="footer">
+    <div class="container-fluid">
+      <span id="copyrightInfo">&copy;&nbsp;Copyright 2017 Brent Lewis</span>
+    </div>
   </footer>
 
 

@@ -12,6 +12,10 @@ body {
 	flex-direction: column;	
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1, h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
@@ -51,6 +55,7 @@ header {
 	height: 100px;
 	background-color: #ffffff;
 	border-bottom: solid 2px #cccccc;
+	transition: height 0.5s;
 }
 
 #mainLogo {
@@ -66,6 +71,7 @@ header {
 	text-align: center;
 	line-height: 90px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	transition: all 0.5s;
 }
 
 ul#navLinks {
@@ -73,6 +79,7 @@ ul#navLinks {
 	z-index: 50;
 	right: 0;
 	line-height: 100px;
+	transition: line-height 0.5s;
 }
 
 li.mainLink {
@@ -98,16 +105,17 @@ li.mainLink a:hover {
 
 .masterWidth { 
 	position: relative;
-	width: 960px;
+	/*width: 960px;*/
 	height: 100%;
 	margin:0 auto;
+	transition: width 0.5s;
 }
 
-/* .container {
-	position: relative;
-	margin-top: 40px;
+.container {
+	/*position: relative;*/
+	/*margin-top: 40px;*/
 	flex: 1;	 
-} */
+}
  
 
 
@@ -117,8 +125,9 @@ li.mainLink a:hover {
 	background-color: #ffffff;
 	border: solid 1px #dddddd;
 	overflow: auto;
-	/*padding: 30px;*/
-	/*margin-bottom: 40px;*/
+	padding: 30px;
+	margin-bottom: 40px;
+	transition: width 0.5s;
 }
 
 
@@ -126,12 +135,13 @@ li.mainLink a:hover {
 /* global "connect with Me" (social channels) styles */
 
 #socialConnect {
-	position: absolute;
+	/*position: absolute;*/
 	top: 0;
 	/*left: 690px;*/
 	/*width: 210px;*/
-	/*padding: 30px;*/
+	padding: 30px;
 	background: #ffffff;	
+	transition: all 0.5s;
 }
 
 ul#socailConnectMenu {
@@ -163,6 +173,7 @@ li.socialLink:hover {
 	width: 200px;
 	float: left;
 	padding: 0px 25px 15px 0px;
+	transition: width 0.5s;
 }
 
 .inPageLink {
@@ -178,8 +189,9 @@ li.socialLink:hover {
 
 /* contact page styles */
 
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
     width: 565px;
+    width: calc(100% - 20px);
     padding: 8px 10px;
     margin: 8px 0;
     display: inline-block;
@@ -194,28 +206,35 @@ input[type=submit] {
     cursor: pointer;
     color: #ffffff;
     font-size: 18px;
-}
+} */
 
 
 
 /* portfolio page styles */
 
 ul#portfolioItems {
-	width: 100%;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-padding-start: 0; 
 }
 
 li.pItem {
 	position: relative;
-	float: left;
+	/*float: left;*/
+	display: inline-flex;
 	width: 275px;
 	height: 205px;
 	overflow: hidden;
 	margin-bottom: 55px;
+	margin: 2% 2%;
+	transition: width 0.5s;
 }
 
-li.pItem:nth-child(odd) {
+/* li.pItem:nth-child(odd) {
 	margin-right: 38px;
-}
+} */
 
 li.pItem a {
 	position: absolute;
@@ -259,11 +278,11 @@ li.pItem:hover .pThumb {
 /* global footer styles */
 
 footer{
-	position: relative; 
-	width: 100%;
+	/*position: relative; */
+	/*width: 100%;*/
 	height: 95px;
 	background-color: #666666;
-	border-top: solid 5px #4aaaa5;
+	/*border-top: solid 5px #4aaaa5;*/
 }
 
 #copyrightInfo{
